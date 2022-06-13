@@ -55,7 +55,7 @@ class Cornelius:
     def load_sequences(self):
         for (dirpath, dirnames, filenames) in walk('.'):
             for filename in filenames:
-                if filename.endswith('.crls'):
+                if filename.endswith('.mimo'):
                     try:
                         with open(f'{filename}', 'rb') as sequence_file:
                             sequence = pickle.load(sequence_file)
@@ -118,7 +118,7 @@ class Cornelius:
         self.current_sequence.velocity = self.velocity
         self.add_sequence(self.current_sequence)
         try:
-            with open(f'{self.current_sequence.name}.crls', 'wb') as sequence_file:
+            with open(f'{self.current_sequence.name}.mimo', 'wb') as sequence_file:
                 pickle.dump(self.current_sequence, sequence_file)
         except Exception as e:
             self.log('Error saving sequence.')
