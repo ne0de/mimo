@@ -7,7 +7,7 @@ from cornelius import Cursor, Keyboard
 from .sequence import Sequence
 from .step import Step
 
-class Cornelius:
+class Mimo:
     def __init__(self):
         self.__sequences = []  
         self.cursor = Cursor()
