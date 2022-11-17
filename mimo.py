@@ -148,9 +148,6 @@ class MimoApp:
         return
     
     def run(self) -> None:
-        """
-            Run mimo.
-        """
         self.running = True
         self.load_sequences()
         self.log('Mimo beta started.')
