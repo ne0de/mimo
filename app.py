@@ -1,4 +1,4 @@
-from mimo import Cornelius
+from mimo import MimoApp
 
-cornelius = Cornelius()
-cornelius.run()
+mimo = MimoApp()
+mimo.run()
