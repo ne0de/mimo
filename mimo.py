@@ -4,8 +4,8 @@ from os import walk
 from time import sleep
 from cornelius import Cursor, Keyboard
 
-from .sequence import Sequence
-from .step import Step
+from sequence import Sequence
+from step import Step
 
 class Cornelius:
     def __init__(self):

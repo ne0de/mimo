@@ -1,6 +1,6 @@
 
 
-from .step import Step
+from step import Step
 from datetime import datetime
 
 class Sequence:
